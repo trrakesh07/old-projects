@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FCC: Tribute Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            #title, #img-caption, p {
+                text-align: center;
+            }
+
+            #img-div {
+                background-color: #d7fb54;
+                padding: 100px 15px 50px 15px;
+            }
+            #image {
+                max-width: 100%;
+                display: block;
+                height: auto;
+                margin: auto;
+            }
+
+            #tribute-info {
+                position: relative;
+                display: block;
+                margin: auto;
+                max-width: 800px;
+                font-size: 18px;
+                line-height: 40px;
+                margin-bottom: 50px;
+            }
+
+            #tribute-info ul {
+                z-index: 2;
+            }
+
+            #ball1, #ball2, #ball3  {
+                z-index: 1;
+            }
+
+            #img-caption {
+                margin-top: 25px;
+            }
+
+            #ball1 {
+                position: absolute;
+                top: 20%;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100px;
+                height: 100px;
+                margin: auto;
+                background-color: #3d12ed;
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+
+            #ball2 {
+                position: absolute;
+                top: 30%;
+                right: 0;
+                bottom: 0;
+                left: 5%;
+                width: 75px;
+                height: 75px;
+                margin: auto;
+                background-color: #F5170A;
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+
+            #ball3 {
+                position: absolute;
+                top: 40%;
+                right: 0;
+                bottom: 0;
+                left: -5%;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                background-color: #b7fc03;
+                border-radius: 50%;
+                opacity: 0.2;
+            }
+
+            #footer {
+                padding: 0px 15px 15px 15px;
+            }
+
+            #footer a {
+                color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <h1 id="title">C. N. R. Rao</h1>
+            <p><strong>A Bharat Ratna awardee</strong></p>
+            <div id="img-div">
+                <img id="image" src="https://bit.ly/2FCxal1" alt="C. N. R. Rao">
+                <p id="img-caption"><strong>C. N. R. Rao</strong></p>
+            </div>
+            <p><strong>Here's a time line of C. N. R. Rao's life:</strong></p>
+            <div id="tribute-info">
+                <ul>
+                    <li><strong>1934</strong> - Born in Bengalore, India</li>
+                    <li><strong>1951</strong> - He obtained his bachelor's degree from Mysore University, and only at the age of seventeen</li>
+                    <li><strong>1959</strong> - After completion of his graduate studies Rao returned to Bangalore to take up a lecturing position, joining IISC and embarking on an independent research program</li>
+                    <li><strong>1964</strong> - He was elected as a fellow of the Indian Academy of Sciences</li>
+                    <li><strong>1984 to 1994</strong> - Became director of the IISc</li>
+                    <li><strong>1989</strong> - He founded Jawaharlal Nehru Centre for Advanced Scientific Research, Bangalore</li>
+                    <li><strong>2005</strong> - He was appointed Chair of the Scientific Advisory Council to the Indian Prime Minister</li>
+                    <li>He shares co-authorship of around 1500 research papers and has co-authored and edited 45 books</li>
+                </ul>
+                <div id="ball1"></div>
+                <div id="ball2"></div>
+                <div id="ball3"></div>
+            </div>
+            <p id="footer"><strong>If you have time, you should read more about this incredible human being on his <a id="tribute-link" href="https://en.wikipedia.org/wiki/C._N._R._Rao" target="_blank">Wikipedia entry</a>.</strong></p> 
+        </main>
+    </body>
+</html>
